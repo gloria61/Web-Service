@@ -24,10 +24,8 @@ public class UserModel implements Serializable{
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "idStudent")
     private Long idStudent;
 	
-	@Column(name = "name")
 	private String name;
 
 	public Long getIdStudent() {
