@@ -30,8 +30,10 @@ public class UserController {
 	}*/
 	
 	@GetMapping("/test")
-	public void doNothing() {
-		
+	public String doNothing() {
+		String str = "HELLO";
+		System.out.print("working");
+		return str;
 	}
 
 }
