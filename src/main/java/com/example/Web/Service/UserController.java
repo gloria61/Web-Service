@@ -19,7 +19,7 @@ public class UserController {
 	@Autowired
 	UserRepository repository;
 	
-	/*@GetMapping("/users")
+	@GetMapping("/users")
 	public List<UserModel> getAllUsers(){
 		return repository.findAll();
 	}
@@ -27,7 +27,7 @@ public class UserController {
 	@PostMapping("/users")
 	public UserModel createUser(@Valid @RequestBody UserModel user) {
 		return repository.save(user);
-	}*/
+	}
 	
 	@GetMapping("/test")
 	public String doNothing() {
