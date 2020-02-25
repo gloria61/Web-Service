@@ -25,7 +25,7 @@ public class UserModel implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idStudent;
 	
-	//private String name;
+	private String name;
 
 	public Long getIdStudent() {
 		return idStudent;
@@ -35,18 +35,18 @@ public class UserModel implements Serializable{
 		this.idStudent = idStudent;
 	}
 
-	//public String getName() {
-		//return name;
-	//}
+	public String getName() {
+		return name;
+	}
 
-	//public void setName(String name) {
-		//this.name = name;
-	//}
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public UserModel(Long idStudent, String name) {
 		super();
 		this.idStudent = idStudent;
-		//this.name = name;
+		this.name = name;
 	}
 	
 	public UserModel() {
