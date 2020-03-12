@@ -29,9 +29,9 @@ public class UserModel implements Serializable {
 	private String surname;
 	private int age;
 	private String email;
-	private int gender;
-	private int sexuality;
-	private int preference;
+	private int gender; // 1-female, 2-male
+	private int sexuality; // 1-hetero, 2-homo
+	private int preference; // 1-female, 2-male
 	private String department;
 	private int phoneNumber;
 	private double points;
